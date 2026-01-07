@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Speech, Heart } from 'lucide-react';
+import logoImg from '../../assets/logo_sweet.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-rose-200 rounded-full flex items-center justify-center">
-            <img src="/logo_sweet.png" alt="Sweet Harmony Logo" className="text-rose-600 w-18 h-12" />
+            <img src={logoImg} alt="Sweet Harmony Logo" className="text-rose-600 w-18 h-12" />
           </div>
           <span className="text-2xl font-serif font-bold tracking-tight text-stone-800">Sweet Harmony</span>
         </div>

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import bannerImg from './assets/hero/banner.png?format=webp&quality=80&w=1920';
+import nosotrosImg from './assets/hero/nosotros.png?format=webp&quality=80&w=800';
 import { 
   Sparkles, 
   Heart, 
@@ -101,8 +103,9 @@ Deseo agendar una cita:
         }}>
           <div className="absolute inset-0 bg-gradient-to-r from-stone-50 via-stone-50/80 to-transparent z-10" />
           <img 
-            src="/hero/banner.png" 
+            src={bannerImg} 
             alt="Spa environment" 
+            loading="eager"
             className="w-full h-full object-cover opacity-60"
           />
         </div>
@@ -140,8 +143,9 @@ Deseo agendar una cita:
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-rose-100 rounded-full -z-10" />
               <div className="rounded-3xl shadow-2xl w-full h-[500px] bg-gradient-to-br from-rose-100 via-stone-100 to-rose-50 overflow-hidden">
                 <img 
-                  src="/hero/nosotros.png" 
+                  src={nosotrosImg} 
                   alt="Nosotros" 
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
