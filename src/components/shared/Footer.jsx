@@ -49,7 +49,7 @@ const Footer = () => {
                   <div>Apto. 301 Sector San Miguel</div>
                   <div>El Carmen de Viboral - Antioquia</div>
                   <a 
-                    href={`https://waze.com/ul?q=${encodeURIComponent(businessInfo.address)}&navigate=yes`}
+                    href={`https://www.waze.com/es-419/live-map/directions?to=ll.6.093657%2C-75.339625`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center space-x-1 text-sky-600 hover:text-sky-700 mt-2 text-xs font-medium"
