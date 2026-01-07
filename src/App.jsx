@@ -14,13 +14,11 @@ import {
   MapPin,
   Instagram,
   Facebook,
-  HeaterIcon,
-  LucideTorus,
-  PlaneLandingIcon,
   HeartMinusIcon
 } from 'lucide-react';
 import Header from './components/shared/Header';
 import Footer from './components/shared/Footer';
+import FloatingButtons from './components/shared/FloatingButtons';
 
 const App = () => {
   const [formState, setFormState] = useState({
@@ -234,7 +232,7 @@ Deseo agendar una cita:
                     <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
                       <Phone size={18} className="text-rose-300" />
                     </div>
-                    <span>{businessInfo.phone}</span>
+                    <span>(+57) 319 536 9250 &bull; 🇨🇴</span>
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -341,6 +339,7 @@ Deseo agendar una cita:
       </section>
 
       <Footer />
+      <FloatingButtons />
     </div>
   );
 };

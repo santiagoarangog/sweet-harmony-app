@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, MapPin, Phone, Sparkles, ExternalLink } from 'lucide-react';
+import { Clock, MapPin, Phone, Sparkles, ExternalLink, Navigation } from 'lucide-react';
 
 const Footer = () => {
   const businessInfo = {
@@ -40,7 +40,7 @@ const Footer = () => {
             <ul className="space-y-4 text-stone-500 text-sm">
               <li className="flex items-center space-x-3">
                 <Phone size={16} />
-                <span>{businessInfo.phone}</span>
+                <span>(+57) 319 536 9250 &bull; 🇨🇴</span>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
@@ -48,11 +48,20 @@ const Footer = () => {
                   <div>Carrera 33B # 43C - 36</div>
                   <div>Apto. 301 Sector San Miguel</div>
                   <div>El Carmen de Viboral - Antioquia</div>
+                  <a 
+                    href={`https://waze.com/ul?q=${encodeURIComponent(businessInfo.address)}&navigate=yes`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-1 text-sky-600 hover:text-sky-700 mt-2 text-xs font-medium"
+                  >
+                    <Navigation size={14} />
+                    <span>Abrir en Waze</span>
+                  </a>
                 </div>
               </li>
               <li className="flex items-center space-x-3">
                 <Clock size={16} />
-                <span>Lun - Sáb: 9am - 7pm</span>
+                <span>Lun - Sáb: 8am - 7pm</span>
               </li>
             </ul>
           </div>
