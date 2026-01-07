@@ -117,7 +117,7 @@ Deseo agendar una cita:
               <span>Bienvenido al Bienestar</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-stone-900 leading-[1.1]">
-              Encuentra tu <span className="text-rose-600 italic">Equilibrio</span> Perfecto
+              Encuentra tu <span className="shimmer-text text-rose-600 italic">Equilibrio</span> Perfecto
             </h1>
             <p className="text-xl text-stone-600 max-w-lg leading-relaxed">
               Un santuario diseñado para desconectar del ruido exterior y reconectar con tu paz interior a través de terapias integrales.
@@ -236,11 +236,15 @@ Deseo agendar una cita:
                     </div>
                     <span>{businessInfo.phone}</span>
                   </div>
-                  <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
                       <MapPin size={18} className="text-rose-300" />
                     </div>
-                    <span className="text-sm">{businessInfo.address}</span>
+                    <div className="text-sm leading-relaxed">
+                      <div>Carrera 33B # 43C - 36</div>
+                      <div>Apto. 301 Sector San Miguel</div>
+                      <div>El Carmen de Viboral - Antioquia</div>
+                    </div>
                   </div>
                 </div>
               </div>

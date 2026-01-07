@@ -4,9 +4,9 @@ import { Clock, MapPin, Phone, Sparkles, ExternalLink } from 'lucide-react';
 const Footer = () => {
   const businessInfo = {
     name: "Sweet Harmony",
-    phone: "573001234567",
-    address: "Calle de la Armonía #123, Ciudad",
-    instagram: "@sweetharmony_spa"
+    phone: "573195369250",
+    address: "Carrera 33B # 43C - 36 Apto. 301 Sector San Miguel / El Carmen de Viboral - Antioquia",
+    instagram: "@sweetharmony.com.co"
   };
 
   return (
@@ -42,9 +42,13 @@ const Footer = () => {
                 <Phone size={16} />
                 <span>{businessInfo.phone}</span>
               </li>
-              <li className="flex items-center space-x-3">
-                <MapPin size={16} />
-                <span>{businessInfo.address}</span>
+              <li className="flex items-start space-x-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <div className="leading-relaxed">
+                  <div>Carrera 33B # 43C - 36</div>
+                  <div>Apto. 301 Sector San Miguel</div>
+                  <div>El Carmen de Viboral - Antioquia</div>
+                </div>
               </li>
               <li className="flex items-center space-x-3">
                 <Clock size={16} />
@@ -55,7 +59,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-stone-200 pt-8 flex flex-col md:flex-row justify-between items-center text-stone-400 text-sm">
-          <p>&copy; 2024 Sweet Harmony. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Sweet Harmony. Todos los derechos reservados.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-stone-600 transition-colors flex items-center space-x-1">
               <span>Privacidad</span>

@@ -5,6 +5,74 @@
   text-align: center;
 }
 
+/* Animación de título flotante con gradiente */
+@keyframes float-title {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animated-title {
+  animation: float-title 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.animated-gradient-text {
+  background: linear-gradient(
+    90deg,
+    #e11d48,
+    #f43f5e,
+    #fb7185,
+    #fda4af,
+    #fb7185,
+    #f43f5e,
+    #e11d48
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 3s ease infinite;
+  display: inline-block;
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    rgba(225, 29, 72, 0.8) 0%,
+    rgba(251, 113, 133, 1) 40%,
+    rgba(253, 164, 175, 1) 50%,
+    rgba(251, 113, 133, 1) 60%,
+    rgba(225, 29, 72, 0.8) 100%
+  );
+  background-size: 1000px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
